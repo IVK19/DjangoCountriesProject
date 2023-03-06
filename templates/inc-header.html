@@ -1,0 +1,13 @@
+<p>
+    <div class="alphabet-small">
+        <ul class="hr">
+            <li>Countries that start with:</li>
+            {% for letter in 'ABCDEFGHIJKLNMOPQRSTUVWXVZ' %}
+            <li>
+                <a href="{% url 'letter' letter %}">{{ letter }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</p>
+
